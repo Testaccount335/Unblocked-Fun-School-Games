@@ -1,3 +1,13 @@
-<h1>About the websote</h1>
-<b>Unblocked Fun School Games is a school games website that is almost always adding new games every week!<b>
+<h1>About the website</h1>
+<b>Unblocked Fun School Games is a school games website that is almost always adding new games every week! 
+<br>
+I did not make any of the games used within the website, all buttons will redirect you to a another website that you may or may not have known about.
+<br>
+If any creators of the website wants this removed i will gladly remove it for them.
+<br>
+</b>
+<h1> Why i made this</h1>
+<b>I made this website for me and my friends, any new website we find that may be interesting we will probably add.
+<br> I also made this website in hope i would get better at coding when i was a beginner (i got better lol) </b>
+
 
