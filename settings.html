@@ -1,13 +1,22 @@
+<head>
+<title>settings | USG</title>
+</head>
 <h1>settings</h1>
-<p>psst --> <a herf="https://candybox2.github.io/?slot=1">(^_^)</a></p>
+<p>psst --> <a href="https://candybox2.github.io/?slot=1">(^_^)</a></p>
 <hr>
 <br>
 <p>theme:</p>
-<button style="background-color: darkgrey; color: white;">Dark</button>
-<button style="background-color: white; color: black;">Light</button>
-<button style="background-color: purple; color: white;">Purple (for koolkids only)</button>
-<button style="background-color: purple; color: black;">Purple w Black Text</button>
+<button style="background-color: darkgrey; color: white;" onclick="changeTheme('dark')">Dark</button>
+<button style="background-color: white; color: black;" onclick="changeTheme('light')">Light</button>
+<button style="background-color: purple; color: white;" onclick="changeTheme('purple')">Purple (for koolkids only)</button>
+<button style="background-color: purple; color: black;" onclick="changeTheme('purpleB')">Purple w Black Text</button>
 <p>early access:</p>
 <button>enable</button>
 <button>disable</button>
+<hr>
 <p>settings will be saved to your local storage. if you clear your cache your settings will be reverted to defualt.</p>
+<script>
+function changeTheme(value) {
+  localStorage.setItem("theme", value);
+}
+</script>
