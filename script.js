@@ -1,4 +1,4 @@
-alert("script intitalized")
+
 function getCookie(cname) {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
@@ -16,7 +16,6 @@ function getCookie(cname) {
 }
 
 var theme = getCookie("theme")
-alert(theme);
 if (theme == "dark") {
   var head  = document.getElementsByTagName('head')[0];
     var link  = document.createElement('link');
