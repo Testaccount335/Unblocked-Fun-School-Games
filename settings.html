@@ -14,9 +14,9 @@
 <button>enable</button>
 <button>disable</button>
 <hr>
-<p>settings will be saved to your local storage. if you clear your cache your settings will be reverted to defualt.</p>
+<p>settings will be saved to your cookies 🤯. if you clear your cookies your settings will be reverted to defualt.</p>
 <script>
 function changeTheme(value) {
-  localStorage.setItem("theme", value);
+  document.cookie = "theme="+value+"; path=/";
 }
 </script>
