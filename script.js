@@ -1,4 +1,22 @@
-if (localStorage.setItem("theme") == "dark") {
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+var theme = getCookie("theme")
+
+if (theme == "dark") {
   var head  = document.getElementsByTagName('head')[0];
     var link  = document.createElement('link');
     link.id   = cssId;
