@@ -18,6 +18,7 @@ function getCookie(cname) {
 var theme = getCookie("theme")
 
 if (theme == "dark") {
+  var cssId = 'myCss';
   var head  = document.getElementsByTagName('head')[0];
     var link  = document.createElement('link');
     link.id   = cssId;
