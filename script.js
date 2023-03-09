@@ -22,11 +22,11 @@ if (theme == "dark") {
   var head  = document.getElementsByTagName('head')[0];
   document.getElementsByTagName('style')[0].remove();
     var link  = document.createElement('link');
-    link.id   = cssId;
+    //link.id   = cssId;
     link.rel  = 'stylesheet';
-    link.type = 'text/css';
+    //link.type = 'text/css';
     link.href = 'https://raw.githubusercontent.com/Testaccount335/Unblocked-Fun-School-Games/main/themes/dark.css';
-    link.media = 'all';
+    //link.media = 'all';
     head.appendChild(link);
   alert("themeAdded")
 }else {
