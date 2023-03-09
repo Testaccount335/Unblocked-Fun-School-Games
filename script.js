@@ -20,6 +20,7 @@ var theme = getCookie("theme")
 if (theme == "dark") {
   var cssId = 'myCss';
   var head  = document.getElementsByTagName('head')[0];
+  document.getElementsByTagName('style')[0].remove();
     var link  = document.createElement('link');
     link.id   = cssId;
     link.rel  = 'stylesheet';
