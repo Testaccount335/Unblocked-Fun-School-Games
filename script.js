@@ -27,6 +27,6 @@ if (theme == "dark") {
     link.media = 'all';
     head.appendChild(link);
   alert("themeAdded")
- else {
+}else {
   alert("change your theme in settings")
 } 
