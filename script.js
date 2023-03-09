@@ -15,18 +15,52 @@ function getCookie(cname) {
   return "";
 }
 
+ var styles = "
+    * {
+      padding: 0px;
+      margin: 0px;
+   }
+body {
+   background-color: black;
+   width: 100%;
+      height: 100%;
+   }
+header{
+   background-color: Red;
+   width:100%;
+   height: 20%;
+   text-align: center;
+   font-size: 20px;
+   color: White;
+  }
+  RedText{
+     color: Red;
+ }
+ middletext{
+  text-align: center;
+  }
+  button{
+  background-color: Red;
+  border: white;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+     border-radius: 15px;
+     border-width: 10px;
+     border-style: solid;
+  border-color: white;
+  }
+"
 var theme = getCookie("theme")
 
 if (theme == "dark") {
-  var cssId = 'myCss';
-  var head  = document.getElementsByTagName('head')[0];
-  document.getElementsByTagName('style')[0].remove();
-    var link  = document.createElement('link');
-    //link.id   = cssId;
-    link.rel  = 'stylesheet';
-    //link.type = 'text/css';
-    link.href = 'https://raw.githubusercontent.com/Testaccount335/Unblocked-Fun-School-Games/main/themes/dark.css';
-    //link.media = 'all';
-    head.appendChild(link);
+ var styleSheet = document.createElement("style")
+styleSheet.innerText = darkTheme
+document.head.appendChild(styleSheet)
   alert("themeAdded")
 }
