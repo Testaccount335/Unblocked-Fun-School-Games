@@ -59,6 +59,7 @@ header{
 var theme = getCookie("theme")
 
 if (theme == "dark") {
+  document.getElementsByTagName('style')[0].remove();
  var styleSheet = document.createElement("style")
 styleSheet.innerText = darkTheme
 document.head.appendChild(styleSheet)
