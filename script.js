@@ -26,4 +26,5 @@ if (theme == "dark") {
     link.href = 'https://raw.githubusercontent.com/Testaccount335/Unblocked-Fun-School-Games/main/themes/dark.css';
     link.media = 'all';
     head.appendChild(link);
+  alert("themeAdded")
 } 
