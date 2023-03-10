@@ -60,8 +60,11 @@ var theme = getCookie("theme")
 
 if (theme == "dark") {
   document.getElementsByTagName('style')[0].remove();
+  alert("removed old theme")
  var styleSheet = document.createElement("style")
+ alert("Created new theme")
 styleSheet.innerText = darkTheme
+  alert("set css")
 document.head.appendChild(styleSheet)
   alert("themeAdded")
 }
