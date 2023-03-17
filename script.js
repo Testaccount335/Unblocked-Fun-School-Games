@@ -1,4 +1,4 @@
-
+alert("oooooooooo")
 function getCookie(cname) {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
@@ -56,6 +56,7 @@ header{
   border-color: white;
   }
 "
+alert("aaaaaaaaaaaaaaaa")
 var theme = getCookie("theme")
 
 if (theme == "dark") {
